@@ -1,0 +1,51 @@
+#footer{
+   font-family: "Work Sans", sans-serif;
+   background-color: black;
+   height: auto;
+   width: 99%;
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+   padding-left: 10vw;
+}
+
+#footer{
+   border-top: solid 2vh rgb(49, 94, 255);
+   padding-top: 5vh;
+}
+
+*{
+   margin: 0;
+}
+
+
+.section{
+   gap: 0.3vh;
+   width: 30vw;
+   height: 20vh;
+   display: flex;
+   justify-content: left;
+   flex-direction: column;
+   color: white;
+
+}
+
+.section a{
+   color: white;
+   text-decoration: none;
+}
+
+body{
+   overflow-x: hidden;
+}
+
+@media (max-width:600px) {
+   #footer{
+      padding-left: 0;
+      flex-direction: column;
+      gap: 5vh;
+      justify-content: center;
+      align-items: center;
+      padding: none;
+   }
+}

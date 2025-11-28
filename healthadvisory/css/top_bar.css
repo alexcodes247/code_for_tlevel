@@ -1,0 +1,89 @@
+*{
+   margin: 0;
+}
+
+
+
+#company{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+#company img{
+   width: 100px;
+}
+
+#account_link{
+   margin-left: auto;
+   
+}
+   
+
+#top{
+   background-color: black;
+   height: auto;
+   display: flex;
+   flex-direction: row;
+}
+
+#bottom{
+   background-color: #2c2580;
+   height: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 1rem;
+}
+
+#bottom a{
+   color: white;
+   text-decoration: none;
+
+}
+
+.navbar{
+   color: white;
+   width: 100%;
+   height: 6vh;
+   background-color: grey;
+   display: flex;
+   flex-direction: column;
+}
+
+@media (max-width:600px) {
+   #top{
+      flex-direction: column;
+      font-size: 4vw;
+      gap: 0px;
+      justify-content: center;
+      align-items: center;
+
+      
+   }
+
+      #company img{
+      width: 30vw;
+   }
+
+   #company{
+      flex-direction: column;
+   }
+
+   #bottom{
+      padding: 1rem;
+      flex-direction: column;
+      gap: 1vh;
+      
+   }
+
+   #bottom a{
+      font-size: 4vw;
+   }
+
+   #account_link{
+   margin-left: 0%;
+   
+}
+   
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Weather Dashboard</title>
+   <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+   <div class="maincontent">
+      <div class="container">
+         <div class="main_title_container">
+            <h1 id="location_output">ENTER YOUR LOCATION</h1>
+         </div>
+         <div class="location_input_container">
+            <input type="search" id="location_input" placeholder="location">
+            <div id="below-search">a</div>
+         </div>
+
+         <div class="information_container">
+            <div class="information">
+               <span class="info_label">Temperature:</span>
+               <span id="temperature_output">N/A</span>
+            </div>
+            <div class="information">
+               <span class="info_label">Wind:</span>
+               <span id="wind_output">N/A</span>
+            </div>
+            <div class="information">
+               <span class="info_label">Condition:</span>
+               <span id="condition_output">N/A</span>
+            </div>
+         </div>
+         <div class="article_links"><a href="">VIEW HEALTH ADVICE ARTICLES</a></div>
+      </div>
+   </div>
+
+   <script src="scripts/weatherapi.js"></script>
+</body>
+</html>
