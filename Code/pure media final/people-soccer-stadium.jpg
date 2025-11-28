@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #050528;
+  color: #fff;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 30, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 10;
+  backdrop-filter: blur(6px);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #fdd835;
+}
+
+.hero {
+  background: url('assets_task_01k6jc32ghfa19bnay96b370dy_1759405871_img_1.webp') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+#venue-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 4rem auto;
+  padding: 2rem;
+  width: 90%;
+  max-width: 1400px;
+  flex-wrap: nowrap;
+}
+
+.venue-card {
+  flex: 1 1 30%;
+  max-width: 30%;
+  height: 65vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#venue1 {
+  background-image: url('empty-soccer-stadium-with-dreamy-fantasy-view-sky.webp');
+}
+
+#venue2 {
+  background-image: url('people-soccer-stadium.webp');
+}
+
+#venue3 {
+  background-image: url('gymnast-getting-ready-competition.webp');
+}
+
+.venue-card div {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  padding: 20px;
+}
+
+.venue-card h1 {
+  font-family: "Creepster", cursive;
+  font-size: 2rem;
+  color: #fdd835;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-size: 1rem;
+  font-family: 'Tac One', sans-serif;
+  color: #eee;
+  margin-bottom: 15px;
+}
+
+.venue-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.venue-title h2 {
+  font-family: "Creepster", cursive;
+  font-size: 3rem;
+  color: #fdd835;
+  margin-bottom: 0.5rem;
+}
+
+.venue-title p {
+  font-family: 'Tac One', sans-serif;
+  font-size: 1.2rem;
+  color: #eee;
+}
+
+.book-btn {
+  background-color: #fdd835;
+  color: #000;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #ffeb3b;
+  transform: scale(1.1);
+}
+
+#footer {
+  background: #000;
+  text-align: center;
+  padding: 40px 10px;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+#links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer-links a {
+  color: #fdd835;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+#legal, #pages, #venues {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 2rem;
+  height: 15vh;
+}
+
+#copyright, #legal a, #pages a, #venues a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: sans-serif!important;
+}
+
+@media (max-width: 900px) {
+  #venue-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .venue-card {
+    flex: 1 1 45%;
+    max-width: 45%;
+    height: 55vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(0, 0, 30, 0.5);
+
+  }
+
+  .navbar nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar nav a {
+    margin: 10px 0;
+  }
+
+  #venue-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    padding: 5vh 2rem;
+  }
+
+  .venue-card {
+    width: 90%;
+    max-width: 90%;
+    height: 50vh;
+  }
+
+  .hero {
+    height: auto;
+  }
+
+  .book-btn {
+    padding: 8px 20px;
+  }
+
+  #footer {
+    font-size: 0.9rem;
+    padding: 30px 10px;
+  }
+  #venue-section{
+    margin-top: 60vh;
+  }
+}
